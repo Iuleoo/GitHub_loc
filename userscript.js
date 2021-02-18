@@ -1,4 +1,19 @@
-
+// ==UserScript==
+// @name                GitHub localization
+// @name:zh-CN     GitHub汉化插件
+// @version             1.0
+// @description       Translate GitHub.com
+// @description:zh      GitHub汉化插件
+// @description:zh-CN   GitHub汉化插件
+// @author              Iuleoo
+// @match               https://github.com/*
+// @grant               GM_xmlhttpRequest
+// @grant               GM_getResourceText
+// @resource            zh-CN https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/zh-CN.json
+// @resource            ja https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/ja.json
+// @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
+// @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
+// ==/UserScript==
 
 (function() {
   'use strict';

@@ -1,9 +1,8 @@
 // ==UserScript==
 // @name                GitHub localization
-// @name:zh-CN     GitHub汉化脚本
+// @name:zh-CN     GitHub中文汉化脚本
 // @version             1.0
 // @description       Translate GitHub.com
-// @description:zh      GitHub中文本地化汉化脚本
 // @description:zh-CN   GitHub中文本地化汉化脚本
 // @author              Iuleoo
 // @match               https://github.com/*

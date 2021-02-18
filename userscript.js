@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name                GitHub localization
-// @name:zh-CN     GitHub汉化插件
+// @name:zh-CN     GitHub汉化脚本
 // @version             1.0
 // @description       Translate GitHub.com
-// @description:zh      GitHub汉化插件
-// @description:zh-CN   GitHub汉化插件
+// @description:zh      GitHub汉化脚本
+// @description:zh-CN   GitHub汉化脚本
 // @author              Iuleoo
 // @match               https://github.com/*
 // @grant               GM_xmlhttpRequest

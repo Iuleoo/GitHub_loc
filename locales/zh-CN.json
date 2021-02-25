@@ -341,7 +341,7 @@
 
     "configure security and analysis features": "配置安全和分析功能",
     "dependency graph": "依赖关系图",
-    "Understand your dependencies.": "了解您的依赖关系",
+    "understand your dependencies": "了解您的依赖关系",
     "dependabot alerts": "依赖机器人警报",
     "be alerted when a new vulnerability is found in one of your dependencies": "当您的一个依赖项中发现新的漏洞时 将发出警报",
     "dependabot security updates": "依赖机器人安全更新",
@@ -363,8 +363,8 @@
     "add": "添加",
     "save": "保存",
     "save email preferences": "保存Email首选项",
-    "well occasionally contact you with the latest news and happenings from the GitHub Universe": "我们偶尔会联系您从 GitHub 宇宙的最新消息和事件。",
-    "well only send you legal or administrative emails, and any emails you’re specifically subscribed to": "我们只会向您发送法律或管理电子邮件，以及您专门订阅的任何电子邮件",
+    "We’ll occasionally contact you with the latest news and happenings from the GitHub Universe": "我们偶尔会联系您从 GitHub 宇宙的最新消息和事件。",
+    "We’ll only send you legal or administrative emails, and any emails you’re specifically subscribed to": "我们只会向您发送法律或管理电子邮件，以及您专门订阅的任何电子邮件",
 
     "__comments-12": "Create a Repository",
     "a repository contains all project files, including the revision history. already have a project repository elsewhere?": "仓库包含项目中的所有文件，包括修订历史记录。在其他地方已有仓库？",

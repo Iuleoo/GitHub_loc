@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name                GitHub Loc
 // @name:zh-CN          GitHub中文汉化脚本
-// @version             1.0
+// @version             1.12
 // @description         Translate GitHub.com
 // @description:zh-CN   GitHub中文本地化汉化脚本
 // @author              Iuleoo
 // @match               https://github.com/*
 // @match               https://gist.github.com/*
-// @resource            zh-CN https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/zh-CN.json
+// @resource            zh-CN https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/zh-CN.json=1.12
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==

@@ -145,7 +145,7 @@
     "your profile": "个人资料",
     "your repositories": "我的仓库",
     "your projects": "我的项目",
-    "your stars": "我star的仓库",
+    "your stars": "我Star的仓库",
     "your gists": "我的代码片段",
     "upgrade": "升级",
     "feature preview": "功能预览",
@@ -757,8 +757,21 @@
     "block command line pushes that expose my email": "禁止公开我通过Email的命令推送",
     "email preferences": "Email首选项",
     "save email preferences": "保存Email首选项",
-    "We’ll occasionally contact you with the latest news and happenings from the GitHub Universe": "我们偶尔会联系您从 GitHub 宇宙的最新消息和事件。",
-    "We’ll only send you legal or administrative emails, and any emails you’re specifically subscribed to": "我们只会向您发送法律或管理电子邮件，以及您专门订阅的任何电子邮件"
+    "we’ll occasionally contact you with the latest news and happenings from the github universe": "我们偶尔会联系您从 GitHub 宇宙的最新消息和事件。",
+    "we’ll only send you legal or administrative emails, and any emails you’re specifically subscribed to": "我们只会向您发送法律或管理电子邮件，以及您专门订阅的任何电子邮件",
+    
+    "your name may appear around github where you contribute or are mentioned. you can remove it at any time.": "您的名字可能会出现在github上，在您贡献或提到的地方，您可以在任何时候删除它",
+    "you can manage verified email addresses in your email settings.": "你可以在你的电子邮件设置中管理经过验证的电子邮件地址，以链接到它们",
+    "you can @mention other users and organizations to link to them.": "你可以@其他用户和组织以链接他们",
+    "you can @mention your company’s github organization to link it.": "你可以@提到你公司的github组织来链接它",
+    "building an application, service, or tool that integrates with github?": "建立一个与github集成的应用程序、服务或工具？",
+    "jobs profile": "工作简介",
+    "available for hire": "可以雇佣",
+    "save jobs profile": "保存工作简介",
+    "save trending settings": "保存趋势设置",
+    "update profile": "更新资料",
+    "update preferences": "更新偏好",
+    "update contributions": "更新贡献"
 
   }
 }

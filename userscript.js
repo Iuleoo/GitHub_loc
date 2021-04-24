@@ -1,15 +1,13 @@
 // ==UserScript==
-// @name                GitHub localization
-// @name:zh-CN     GitHub中文汉化脚本
+// @name                GitHub Loc
+// @name:zh-CN          GitHub中文汉化脚本
 // @version             1.0
-// @description       Translate GitHub.com
+// @description         Translate GitHub.com
 // @description:zh-CN   GitHub中文本地化汉化脚本
 // @author              Iuleoo
 // @match               https://github.com/*
-// @grant               GM_xmlhttpRequest
-// @grant               GM_getResourceText
+// @match               https://gist.github.com/*
 // @resource            zh-CN https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/zh-CN.json
-// @resource            ja https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/ja.json
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==
@@ -17,7 +15,7 @@
 (function() {
   'use strict';
 
-  const SUPPORT_LANG = ["zh-CN", "ja"];
+  const SUPPORT_LANG = ["zh-CN"];
   const lang = (navigator.language || navigator.userLanguage);
   const locales = getLocales(lang)
 
@@ -27,7 +25,7 @@
   watchUpdate();
 
   function getLocales(lang) {
-    if(lang.startsWith("zh")) { // zh zh-TW --> zh-CN
+    if(lang.startsWith("zh")) {
       lang = "zh-CN";
     }
     if(SUPPORT_LANG.includes(lang)) {
@@ -68,17 +66,37 @@
   }
 
   function shoudTranslateEl(el) {
-    const blockIds = ["readme"];
-    const blockTags = ["CODE", "SCRIPT", "LINK", "IMG", "svg", "TABLE", "ARTICLE"];
+    const blockIds = ["readme", "wiki-content"];
+    const blockClass = [
+      "CodeMirror",
+      "css-truncate"
+    ];
+    const blockTags = ["CODE", "SCRIPT", "LINK", "IMG", "svg", "TABLE", "ARTICLE", "PRE"];
 
-    return !(el.id && blockIds.includes(el.id))
-      && !(blockTags.includes(el.tagName));
+    if(blockTags.includes(el.tagName)) {
+      return false;
+    }
+
+    if(el.id && blockIds.includes(el.id)) {
+      return false;
+    }
+
+    if(el.classList) {
+      for(let clazz of blockClass) {
+        if(el.classList.contains(clazz)) {
+          return false;
+        }
+      }
+    }
+
+    return true;
   }
 
   function traverseElement(el) {
     if(!shoudTranslateEl(el)) {
       return
     }
+
 
     for(const child of el.childNodes) {
       if(["RELATIVE-TIME", "TIME-AGO"].includes(el.tagName)) {
@@ -138,7 +156,6 @@
 
       GM_xmlhttpRequest({
         method: "GET",
-        url: `https://www.githubs.cn/translate?q=`+ encodeURIComponent(desc),
         onload: function(res) {
           if (res.status === 200) {
             $("#translate-me").hide();

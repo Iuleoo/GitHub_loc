@@ -777,6 +777,23 @@
     "update contributions": "更新贡献",
     "building an application, service, or tool that integrates with github?": "建立一个与github集成的应用程序、服务或工具？",
     "join the github developer program": "加入Github开发者计划",
-    "developer site": "开发者网站"
+    "developer site": "开发者网站",
+
+    "theme preferences": "主题偏好",
+    "choose how github looks to you. select a single theme, or sync with your system and automatically switch between day and night themes.": "选择github的外观。选择一个单一的主题，或者与你的系统同步，在白天和夜晚的主题之间自动切换",
+    "theme mode": "主题模式",
+    "single theme": "固定主题",
+    "github will use your selected theme": "",
+    "default light": "默认浅色",
+    "default dark": "默认暗色",
+    "dark dimmed": "黑中代灰,IDE色",
+    "sync with system": "与系统同步",
+    "github theme will match your system active settings": "Github主题将与你的系统设置相匹配",
+    "day theme": "浅色主题",
+    "this theme will be active when your system is set to “light mode”": "当你的系统被设置为 '浅色主题'时，这个主题将被激活",
+    "night theme": "深色主题",
+    "this theme will be active when your system is set to “dark mode”": "当你的系统设置为'深色主题'时，该主题将被激活",
+    "emoji skin tone preference": "Emoji表情符号的肤色",
+
   }
 }

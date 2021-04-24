@@ -761,17 +761,22 @@
     "we’ll only send you legal or administrative emails, and any emails you’re specifically subscribed to": "我们只会向您发送法律或管理电子邮件，以及您专门订阅的任何电子邮件",
     
     "your name may appear around github where you contribute or are mentioned. you can remove it at any time.": "您的名字可能会出现在github上，在您贡献或提到的地方，您可以在任何时候删除它",
-    "you can manage verified email addresses in your email settings.": "你可以在你的电子邮件设置中管理经过验证的电子邮件地址，以链接到它们",
-    "you can @mention other users and organizations to link to them.": "你可以@其他用户和组织以链接他们",
-    "you can @mention your company’s github organization to link it.": "你可以@提到你公司的github组织来链接它",
-    "building an application, service, or tool that integrates with github?": "建立一个与github集成的应用程序、服务或工具？",
+    "you can manage verified email addresses in your": "你可以在你的网站上管理经过验证的电子邮件地址",
+    "email settings": "电子邮件设置",
+    "select a verified email to display": "选择一个经过验证的电子邮件来显示",
+    "remove": "移除",
+    "privacy statement": "隐私声明",
+    "to learn more about how we use this information": "了解更多关于我们如何使用这些信息",
+    "learn how we count contributions": "了解我们如何计算捐款",
     "jobs profile": "工作简介",
-    "available for hire": "可以雇佣",
+    "available for hire": "可以雇佣我",
     "save jobs profile": "保存工作简介",
     "save trending settings": "保存趋势设置",
     "update profile": "更新资料",
     "update preferences": "更新偏好",
-    "update contributions": "更新贡献"
-
+    "update contributions": "更新贡献",
+    "building an application, service, or tool that integrates with github?": "建立一个与github集成的应用程序、服务或工具？",
+    "join the github developer program": "加入Github开发者计划",
+    "developer site": "开发者网站"
   }
 }

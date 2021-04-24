@@ -1,13 +1,17 @@
 // ==UserScript==
-// @name                GitHub Loc
-// @name:zh-CN          GitHub中文汉化脚本
-// @version             1.12
+// @name                GitHub local
+// @name:zh-CN          GitHub汉化油猴脚本
+// @namespace           https://github.com/Iuleoo/GitHub_loc
+// @version             2.0
 // @description         Translate GitHub.com
-// @description:zh-CN   GitHub中文本地化汉化脚本
-// @author              Iuleoo
+// @description:zh      GitHub汉化插件，含个性翻译
+// @description:zh-CN   GitHub汉化插件，含个性翻译
+// @author              IuLeoo
 // @match               https://github.com/*
 // @match               https://gist.github.com/*
-// @resource            zh-CN https://raw.githubusercontent.com/Iuleoo/GitHub_loc/master/locales/zh-CN.json=1.12
+// @grant               GM_xmlhttpRequest
+// @grant               GM_getResourceText
+// @resource            zh-CN https://cdn.jsdelivr.net/gh/Iuleoo/GitHub_loc@master/locales/zh-CN.json?v=20210424
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==
@@ -15,7 +19,7 @@
 (function() {
   'use strict';
 
-  const SUPPORT_LANG = ["zh-CN"];
+  const SUPPORT_LANG = ["zh-CN", "ja"];
   const lang = (navigator.language || navigator.userLanguage);
   const locales = getLocales(lang)
 
@@ -25,7 +29,7 @@
   watchUpdate();
 
   function getLocales(lang) {
-    if(lang.startsWith("zh")) {
+    if(lang.startsWith("zh")) { // zh zh-TW --> zh-CN
       lang = "zh-CN";
     }
     if(SUPPORT_LANG.includes(lang)) {
@@ -69,7 +73,7 @@
     const blockIds = ["readme", "wiki-content"];
     const blockClass = [
       "CodeMirror",
-      "css-truncate"
+      "css-truncate" // 过滤文件目录
     ];
     const blockTags = ["CODE", "SCRIPT", "LINK", "IMG", "svg", "TABLE", "ARTICLE", "PRE"];
 
@@ -96,7 +100,6 @@
     if(!shoudTranslateEl(el)) {
       return
     }
-
 
     for(const child of el.childNodes) {
       if(["RELATIVE-TIME", "TIME-AGO"].includes(el.tagName)) {
@@ -155,7 +158,6 @@
       }
 
       GM_xmlhttpRequest({
-        method: "GET",
         onload: function(res) {
           if (res.status === 200) {
             $("#translate-me").hide();

@@ -1,7 +1,7 @@
 # GitHub汉化油猴脚本
 
 ## 简介
-&emsp;面向初级Github使用者，对功能及英语能力不是很好的同学
+&emsp;面向初级Github使用者，对功能理解及英语能力不是很好的同学
 
 &emsp;目前汉化程度80%
 
@@ -21,12 +21,10 @@
 
 ## 效果演示：
 
-![1](https://i.klyi.net/img/27)
-
-![2](https://i.klyi.net/img/30)
-
-![3](https://i.klyi.net/img/26)![4](https://i.klyi.net/img/28)
+![4](https://i.klyi.net/img/28)
 
 ![5](https://i.klyi.net/img/29)
 
+![2](https://i.klyi.net/img/30)
 
+![5](https://i.klyi.net/img/33)

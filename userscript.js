@@ -11,7 +11,7 @@
 // @match               https://gist.github.com/*
 // @grant               GM_xmlhttpRequest
 // @grant               GM_getResourceText
-// @resource            zh-CN https://cdn.jsdelivr.net/gh/Iuleoo/GitHub_loc@master/locales/zh-CN.json?v=20210424
+// @resource            zh-CN https://cdn.jsdelivr.net/gh/Iuleoo/GitHub_loc@master/locales/zh-CN.json?v=20210905
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==

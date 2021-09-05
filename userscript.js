@@ -2,7 +2,7 @@
 // @name                GitHub local
 // @name:zh-CN          GitHub汉化油猴脚本
 // @namespace           https://github.com/Iuleoo/GitHub_loc
-// @version             2.0
+// @version             2.1
 // @description         Translate GitHub.com
 // @description:zh      GitHub汉化插件，含个性翻译
 // @description:zh-CN   GitHub汉化插件，含个性翻译

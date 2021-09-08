@@ -18,13 +18,3 @@
 &emsp;&emsp;&emsp;油猴脚本安装地址：[https://greasyfork.org/zh-CN/scripts/421937-github-localization](https://greasyfork.org/zh-CN/scripts/421937-github-localization)
 
 三、安装完成后刷新Github即可
-
-## 效果演示：
-
-![1](https://i.klyi.net/img/28)
-
-![2](https://i.klyi.net/img/29)
-
-![3](https://i.klyi.net/img/30)
-
-![4](https://i.klyi.net/img/33)
